@@ -3,7 +3,7 @@ import re
 import google.generativeai as genai
 
 # Configure Gemini
-genai.configure(api_key=st.secrets["AIzaSyAc6ctooYBucHy1dvONh6IPPRqBX4U4H68"])
+genai.configure(api_key=st.secrets["API_KEY"])
 model = genai.GenerativeModel("gemini-2.5-flash")
 
 st.title("🛡️ URL / SMS / Email Spam Checker")
